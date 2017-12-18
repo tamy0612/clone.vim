@@ -1,6 +1,6 @@
 " Vim colorscheme
 " Author: Yasumasa Tamura
-" Last Change: 12-Jun-2014.
+" Last Change: 18-Dec-2017.
 "
 " GUI / 256 color terminal
 
@@ -11,7 +11,7 @@ set background=dark
 
 " Base color
 " ----------
-highlight Normal ctermfg=252 ctermbg=none guifg=#d0d0d0 guibg=#000000
+highlight Normal ctermfg=252 guifg=#d0d0d0 guibg=#000000
 
 " Comment Group
 " -------------
@@ -44,7 +44,7 @@ highlight Type ctermfg=120 cterm=none guifg=#98fb98 gui=none
 " --------
 highlight Underlined ctermfg=121 cterm=underline guifg=#76eec6 gui=underline
 highlight Error ctermfg=15 ctermbg=88 cterm=bold guifg=#ffffff guibg=#800000 gui=bold
-highlight Search ctermfg=1 ctermbg=none cterm=bold guifg=#800000 guibg=none gui=bold
+highlight Search ctermfg=1 cterm=bold guifg=#800000 gui=bold
 highlight Todo  ctermfg=124 ctermbg=184 cterm=bold guifg=#aa0000 guibg=#dddd00 gui=bold
 
 " Visual
@@ -63,7 +63,7 @@ if v:version < 704
   highlight clear cursorcolumn
 endif
 highlight CursorLine ctermbg=235 cterm=underline guibg=#202020 gui=underline
-highlight LineNr ctermfg=240 ctermbg=none  guifg=#404040 guibg=#000000
+highlight LineNr ctermfg=240 guifg=#404040 guibg=#000000
 highlight CursorLineNr ctermfg=203 ctermbg=235 guifg=#ff3030 guibg=#202020
 augroup cch
   autocmd! cch
